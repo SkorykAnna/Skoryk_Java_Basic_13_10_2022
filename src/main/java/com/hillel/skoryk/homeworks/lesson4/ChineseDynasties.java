@@ -3,6 +3,7 @@ package com.hillel.skoryk.homeworks.lesson4;
 public class ChineseDynasties {
 
     public static void main(String[] args) {
+
         // династія Лі показники атаки:
         int warriorLi = 13;
         int archerLi = 24;
