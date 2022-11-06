@@ -18,7 +18,7 @@ public class GuessNum {
                     System.out.println("Помилкові дані! Має бути число від 0 до 10! Спробуй ще раз.");
                     sc.nextLine();
                 }
-                if (num != random && (num >= 0 & num <= 10)) {
+                if (num != random && (num >= 0 && num <= 10)) {
                     System.out.println("Вибач, але ти не вгадав. :( \nСпробуй ще раз: ");
                     sc.nextLine();
                 } else if (num == random) {

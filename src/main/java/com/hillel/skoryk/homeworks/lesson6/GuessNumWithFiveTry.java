@@ -18,7 +18,7 @@ public class GuessNumWithFiveTry {
                     System.out.println("Помилкові дані! Має бути число від 0 до 10! Спробуй ще раз.");
                     sc.nextLine();
                 }
-                if (num != random && (num >= 0 & num <= 10) && (i != 5)) {
+                if (num != random && (num >= 0 && num <= 10) && (i != 5)) {
                     System.out.println("Вибач, але ти не вгадав. :( \nСпробуй ще раз: ");
                     sc.nextLine();
                 } else if (num == random) {
