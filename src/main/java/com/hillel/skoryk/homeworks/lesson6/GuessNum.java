@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class GuessNum {
     public static void main(String[] args) {
         System.out.println("Вгадай число, яке 'загадав' комп'ютер. Випробуй свою вдачу!");
-        int random = (int) (Math.random() * 10);
+        int random = (int) (Math.random() * 11);
 
         Scanner sc = new Scanner(System.in);
 
