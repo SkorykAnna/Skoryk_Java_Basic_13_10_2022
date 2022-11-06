@@ -3,7 +3,7 @@ package com.hillel.skoryk.homeworks.lesson6;
 public class NumShuttle {
     public static void main(String[] args) {
         System.out.println("У Японії числа 4 та 9 вважаються нещасливими.");
-        System.out.println("Тому ми  пронумерувати 100 космічних шатлів для перевезення людей на Марс так, " +
+        System.out.println("Тому ми пронумерували 100 космічних шатлів для перевезення людей на Марс так, " +
                 "щоб у номерах шатлів не траплялося нещасливих чисел.");
         System.out.println("Список пронумерованих шатлів вийшов таким: ");
 
