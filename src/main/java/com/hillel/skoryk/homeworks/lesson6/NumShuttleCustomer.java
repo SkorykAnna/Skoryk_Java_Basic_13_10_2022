@@ -25,7 +25,7 @@ public class NumShuttleCustomer {
                 sc.nextLine();
                 continue;
             }
-
+            sc.nextLine();
             System.out.println("Друга цифра: ");
             if (sc.hasNextInt()) {
                 second = sc.nextInt();
@@ -39,7 +39,7 @@ public class NumShuttleCustomer {
                 sc.nextLine();
                 continue;
             }
-
+            sc.nextLine();
             System.out.println("Кількість шатлів (обмеження в 500): ");
             if (sc.hasNextInt()) {
                 shuttle = sc.nextInt();
@@ -53,7 +53,6 @@ public class NumShuttleCustomer {
                 sc.nextLine();
                 continue;
             }
-
             break;
         }
         list(first, second, shuttle);
