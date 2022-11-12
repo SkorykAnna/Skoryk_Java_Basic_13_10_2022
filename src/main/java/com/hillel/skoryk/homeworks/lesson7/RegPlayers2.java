@@ -14,6 +14,7 @@ public class RegPlayers2 {
         int[] secondTeam = array(25);
 
         print(firstTeam, sum(firstTeam), 1);
+        System.out.println();
         print(secondTeam, sum(secondTeam), 2);
 
     }
