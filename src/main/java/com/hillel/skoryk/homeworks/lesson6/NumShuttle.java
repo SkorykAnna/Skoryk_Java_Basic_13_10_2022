@@ -6,8 +6,8 @@ public class NumShuttle {
         System.out.println("Тому ми пронумерували 100 космічних шатлів для перевезення людей на Марс так, " +
                 "щоб у номерах шатлів не траплялося нещасливих чисел.");
         System.out.println("Список пронумерованих шатлів вийшов таким: ");
-
-        int count = 0;
+        another();
+       /* int count = 0;
         int i = 1;
         int k;
         int j;
@@ -34,6 +34,19 @@ public class NumShuttle {
 
             i++;
 
+        } */
+    }
+
+    private static void another () {
+        int counter = 0;
+
+        for (int i =1; counter < 100; i++) {
+            if(String.valueOf(i).contains("4") || String.valueOf(i).contains("9")) {
+                continue;
+            }
+            System.out.println("Номер шатлу: " + i);
+            counter++;
         }
+        System.out.println(counter);
     }
 }
