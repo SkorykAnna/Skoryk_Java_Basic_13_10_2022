@@ -1,5 +1,7 @@
 package com.hillel.skoryk.homeworks.lesson7;
 
+import org.jetbrains.annotations.NotNull;
+
 public class RegPlayers2 {
 
     public static void main(String[] args) {
@@ -23,7 +25,7 @@ public class RegPlayers2 {
         return (min + (int) (Math.random() * ((max - min) + 1)));
     }
 
-    private static int[] array(int length) {
+    private static int @NotNull [] array(int length) {
         int[] arr = new int[length];
         for (int i = 0; i < arr.length; i++) {
             arr[i] = randomAge(18, 40);
@@ -31,7 +33,7 @@ public class RegPlayers2 {
         return arr;
     }
 
-    private static int sum(int[] arr) {
+    private static int sum(int @NotNull [] arr) {
         int sum = 0;
         for (int j : arr) {
             sum += j;
@@ -39,7 +41,7 @@ public class RegPlayers2 {
         return sum;
     }
 
-    private static void print(int[] arr, int sum, int teamNum) {
+    private static void print(int @NotNull [] arr, int sum, int teamNum) {
 
         System.out.println("Гравці " + teamNum + " команди мають такий вік: ");
         for (int i = 0; i < arr.length; i++) {
