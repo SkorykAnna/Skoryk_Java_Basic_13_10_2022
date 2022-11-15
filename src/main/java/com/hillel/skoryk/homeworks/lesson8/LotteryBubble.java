@@ -2,7 +2,7 @@ package com.hillel.skoryk.homeworks.lesson8;
 
 import java.util.Arrays;
 
-public class Lottery {
+public class LotteryBubble {
 
     public static void main(String[] args) {
 
