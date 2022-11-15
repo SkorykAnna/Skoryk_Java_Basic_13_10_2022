@@ -26,22 +26,19 @@ public class LotteryUpd {
 
                 count++;
                 arrCoincidence[i] = i;
+
             }
         }
 
         System.out.println("Кількість збігів: " + count);
-
         System.out.println();
+
         System.out.print("Збіг в позиціях: ");
 
         if (count == 0) {
             System.out.println("Не знайдено");
         } else {
-            for (int j = 0; j < n; j++) {
-                if (arrCoincidence[j] != 0) {
-                    System.out.print(arrCoincidence[j] + " ");
-                }
-            }
+            printArr(arrCoincidence, n);
         }
     }
 
@@ -53,6 +50,14 @@ public class LotteryUpd {
             array[i] = (int) (Math.random() * 10);
         }
         return array;
+    }
+
+    public static void printArr(int[] array, int n) {
+        for (int j = 0; j < n; j++) {
+            if (array[j] != 0) {
+                System.out.print(array[j] + " ");
+            }
+        }
     }
 
 }
