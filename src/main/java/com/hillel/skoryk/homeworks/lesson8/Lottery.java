@@ -15,14 +15,22 @@ public class Lottery {
         Arrays.sort(arrCompanyNumbers);
         Arrays.sort(arrUserNumbers);
 
-        for (int i = 0; i < n; i++) {
-            if (arrCompanyNumbers[i] == arrUserNumbers[i]) {
-                count++;
-            }
-        }
-
         System.out.println(Arrays.toString(arrCompanyNumbers) + " числа, які загадані фірмою-організатором лотереї.");
         System.out.println(Arrays.toString(arrUserNumbers) + " числа, які вказав гравець.");
+        System.out.println();
+        System.out.println("Збіг в позиціях: ");
+
+        for (int i = 0; i < n; i++) {
+            if (arrCompanyNumbers[i] == arrUserNumbers[i]) {
+
+                System.out.print(i + " ");
+                count++;
+
+            }
+        }
+        if (count == 0) {
+            System.out.println("Не знайдено");
+        }
         System.out.println();
         System.out.println("Кількість збігів: " + count);
     }
