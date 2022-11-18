@@ -1,6 +1,8 @@
 package com.hillel.skoryk.homeworks.lesson9;
 
-import java.util.Arrays;
+import org.jetbrains.annotations.NotNull;
+
+//import java.util.Arrays;
 import java.util.Scanner;
 
 public class TwoDimensionalArrays {
@@ -28,9 +30,11 @@ public class TwoDimensionalArrays {
         }
 
         System.out.println("Перший масив: ");
-        System.out.println(Arrays.deepToString(array1));
+//        System.out.println(Arrays.deepToString(array1));
+       printArr(array1);
         System.out.println("Другий масив: ");
-        System.out.println(Arrays.deepToString(array2));
+//        System.out.println(Arrays.deepToString(array2));
+        printArr(array2);
 
     }
 
@@ -57,6 +61,16 @@ public class TwoDimensionalArrays {
         return number;
     }
 
+    public static void printArr(int[] @NotNull [] array) {
+        for (int[] ints : array) {
+            for (int anInt : ints) {
+                System.out.print(anInt + " ");
+            }
+            System.out.println();
+        }
+    }
+}
+
 //    public static int[][] array(int n, int m) {
 //
 //        int [][] array = new int [n][m];
@@ -71,4 +85,3 @@ public class TwoDimensionalArrays {
 //    }
 //
 
-}
