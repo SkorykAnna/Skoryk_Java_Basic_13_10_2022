@@ -46,12 +46,12 @@ public class TwoDimensionalArrays {
 
         for (; ; ) {
             if (!sc.hasNextInt()) {
-                System.out.println("Помилкові дані! Має бути число. Спробуй ще раз:");
+                System.out.println("Помилкові дані! Має бути додатнє число. Спробуй ще раз:");
                 sc.nextLine();
             } else {
                 number = sc.nextInt();
                 if (number <= 0) {
-                    System.out.println("Помилкові дані! Має бути число. Спробуй ще раз:");
+                    System.out.println("Помилкові дані! Має бути додатнє число. Спробуй ще раз:");
                     sc.nextLine();
                     continue;
                 }
