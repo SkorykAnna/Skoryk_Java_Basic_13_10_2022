@@ -42,7 +42,7 @@ public class TwoDimensionalArrays {
 
         Scanner sc = new Scanner(System.in);
 
-        int number;
+        int number = 0;
 
         for (; ; ) {
             if (!sc.hasNextInt()) {
@@ -53,6 +53,7 @@ public class TwoDimensionalArrays {
                 if (number < 0) {
                     System.out.println("Помилкові дані! Має бути число. Спробуй ще раз.");
                     sc.nextLine();
+                    continue;
                 }
                 break;
             }
