@@ -7,9 +7,7 @@ public class BurgerMain {
         Burger orderBurger = new Burger();
 
         orderBurger.regularBurger();
-        System.out.println();
         orderBurger.dietaryBurger();
-        System.out.println();
         orderBurger.doubleMeatBurger();
 
     }

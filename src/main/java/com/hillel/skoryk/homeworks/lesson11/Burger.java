@@ -18,7 +18,7 @@ public class Burger {
 
     void regularBurger () {
             System.out.println("Your order is a regular burger. It consists of: " +
-                    buns + ", " + meat + ", " + cheese + ", " + greens + ", " + mayonnaise + ".");
+                    buns + ", " + meat + ", " + cheese + ", " + greens + ", " + mayonnaise + ". ");
         }
 
         void dietaryBurger () {
